@@ -22,7 +22,7 @@ class Waiter
     variable = meals.max do |a, b|
       a.tip <=> b.tip
     end
-    variable
+    variable.customer
   end
 
 end
