@@ -18,4 +18,11 @@ class Waiter
     Meal.new(self, customer, total, tip=0)
   end
 
+  def best_tipper
+    variable = meals.max do |a, b|
+      a.tip <=> b.tip
+    end
+    variable
+  end
+
 end
